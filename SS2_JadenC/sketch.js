@@ -1,5 +1,5 @@
 // Jaden Collado
-//circles
+//circle colors
 let r1 = 128;
 let g1 = 0;
 let b1 = 0;
