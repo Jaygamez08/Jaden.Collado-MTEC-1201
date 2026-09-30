@@ -170,19 +170,19 @@ function keyPressed () {
 
   b5 -= 5
 
- if (keyIsDown(UP_ARROW))
+ if (keyIsDown(UP_ARROW)) //increase size of bottom circle on x axis
 
   groworshrink++
 
- if (keyIsDown(DOWN_ARROW))
+ if (keyIsDown(DOWN_ARROW)) //decrease size of bottom circle on x axis
 
   groworshrink--
 
- if (keyIsDown(UP_ARROW) && !keyIsDown(SHIFT))
+ if (keyIsDown(UP_ARROW) && !keyIsDown(SHIFT)) //increase size of bottom circle on y axis
 
   groworshrink2++
 
- if (keyIsDown(DOWN_ARROW) && !keyIsDown(SHIFT))
+ if (keyIsDown(DOWN_ARROW) && !keyIsDown(SHIFT)) //decrease size of bottom circle on y axis
 
   groworshrink2--
 
