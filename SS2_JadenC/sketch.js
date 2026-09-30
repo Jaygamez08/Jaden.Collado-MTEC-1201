@@ -22,6 +22,9 @@ let b5 = 0
 
 let right = 0
 
+let groworshrink = 0
+let groworshrink2 = 0
+
 
 function setup() {
   createCanvas(800, 600);
@@ -38,7 +41,7 @@ function draw() {
   stroke (r3, g3, b3);
   ellipse (600, 150, mouseX, mouseY);
   stroke (r5, g5 , b5)
-  ellipse (right, 500, 200, 200)
+  ellipse (right, 500, groworshrink, groworshrink2)
 
   right +=1
   if (right > width)
@@ -166,6 +169,22 @@ function keyPressed () {
  if (key === 'G') // decrease blue of bottom circle by 5
 
   b5 -= 5
+
+ if (keyIsDown(UP_ARROW))
+
+  groworshrink++
+
+ if (keyIsDown(DOWN_ARROW))
+
+  groworshrink--
+
+ if (keyIsDown(UP_ARROW) && !keyIsDown(SHIFT))
+
+  groworshrink2++
+
+ if (keyIsDown(DOWN_ARROW) && !keyIsDown(SHIFT))
+
+  groworshrink2--
 
  if (key === 'H'){
   r1 = random (255)
